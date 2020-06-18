@@ -8,6 +8,7 @@ tom2.hideturtle()
 tom3 = turtle.Turtle()
 tom3.hideturtle()
 
+
 def gotoPos(x, y):
     tom.penup()
     tom.goto(x, y)
@@ -55,7 +56,6 @@ tom.pensize(1)
 
 # body frame
 
-
 gotoPos(-50, -145)
 tom.setheading(120)
 tom.pensize(15)
@@ -67,7 +67,7 @@ tom.forward(100)
 tom.left(60)
 tom.forward(150)
 
-gotoPos(25,0)
+gotoPos(25, 0)
 tom.right(60)
 tom.fillcolor("black")
 tom.begin_fill()
@@ -77,9 +77,10 @@ for i in range(2):
     tom.forward(50)
     tom.left(90)
 tom.end_fill()
+
 tom2.penup()
-tom2.goto(-35,35)
-tom.pendown()
+tom2.goto(-35, 35)
+tom2.pendown()
 tom2.showturtle()
 tom2.right(90)
 tom2.shape("circle")
@@ -87,37 +88,31 @@ tom2.shapesize(5, 3.5, 10)
 tom2.fillcolor("white")
 tom3.showturtle()
 tom3.penup()
-tom3.goto(-110,30)
+tom3.goto(-110, 30)
 tom3.pendown()
 tom3.shape("circle")
 tom3.shapesize(4, 3.5, 10)
 tom3.fillcolor("white")
 
-gotoPos(155,0)
+gotoPos(155, 0)
 
-tom.right(90)
-tom.forward(100)
+tom.right(80)
+tom.forward(140)
 
+gotoPos(-130, -15)
+tom.right(30)
 
+tom.forward(140)
 
+gotoPos(-70, 20)
+tom.write("Yezdi", font=("Arial", 20,))
 
-gotoPos(-115,-15)
-tom.right(180)
-tom.left(135)
-tom.right(360)
-
-
-tom.forward(100)
-
-gotoPos(-70,20)
-tom.right(135)
-tom.left(90)
-tom.write("yezdi", font=("Arial", 20, ))
-
-
-gotoPos(-95,55)
-tom.right(135)
+gotoPos(-95, 55)
+tom.right(185)
 tom.forward(55)
 tom.right(90)
 tom.forward(10)
+
+
+
 canvas.exitonclick()
