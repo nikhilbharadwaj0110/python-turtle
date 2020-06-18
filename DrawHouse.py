@@ -1,0 +1,123 @@
+import turtle
+
+canvas = turtle.Screen()
+tom=turtle.Turtle()
+tom.speed(3)
+
+tom.penup()
+tom.goto(-150,100)
+tom.pendown()
+tom.fillcolor("brown")
+tom.begin_fill()
+tom.right(90)
+for i in range(4):
+    tom.forward(500)
+    tom.left(90)
+
+tom.end_fill()
+tom.penup()
+tom.goto(35,-150)
+tom.pendown()
+tom.fillcolor("sienna")
+tom.begin_fill()
+tom.forward(230)
+tom.left(90)
+tom.forward(100)
+tom.left(90)
+tom.forward(230)
+tom.left(90)
+tom.forward(100)
+tom.end_fill()
+
+
+tom.penup()
+tom.goto(200,-0)
+tom.pendown()
+tom.right(90)
+tom.fillcolor("white")
+
+for u in range(4):
+    tom.forward(75)
+    tom.right(90)
+
+tom.end_fill()
+tom.penup()
+tom.goto(-125,-0)
+tom.pendown()
+tom.fillcolor("white")
+
+tom.begin_fill()
+for n in range(4):
+    tom.forward(75)
+    tom.right(90)
+
+
+tom.forward(37.5)
+tom.right(90)
+tom.forward(75)
+tom.left(90)
+tom .forward(37.5)
+tom.left(90)
+tom.forward(37.5)
+tom.left(90)
+tom.forward(75)
+tom.end_fill()
+
+tom.fillcolor("white")
+tom.begin_fill()
+tom.penup()
+tom.goto(198.5,0)
+tom.pendown()
+tom.right(180)
+tom.forward(37.5)
+tom.right(90)
+tom.forward(75)
+tom.left(90)
+tom.forward(37.5)
+tom.left(90)
+tom.forward(37.5)
+tom.left(90)
+tom.forward(75)
+tom.end_fill()
+
+tom.penup()
+tom.goto(37,-275)
+tom.pendown()
+tom.fillcolor("black")
+tom.begin_fill()
+tom.circle(5)
+tom.end_fill()
+tom.penup()
+tom.goto(-150,100)
+tom.pendown()
+
+tom.fillcolor("gray")
+tom.begin_fill()
+tom.right(90)
+tom.forward(650)
+tom.left(90)
+tom.forward(500)
+tom.left(90)
+tom.forward(650)
+tom.end_fill()
+
+ypos = 0
+for i in range(4):
+    tom.penup()
+    tom.goto(-800,ypos)
+    tom.pendown()
+    tom.forward(650)
+    ypos = ypos - 100
+
+tom.fillcolor("brown")
+tom.penup()
+tom.goto(-800, 100)
+tom.pendown()
+tom.begin_fill()
+tom.left(15)
+tom.forward(600)
+tom.right(30)
+tom.forward(600)
+tom.end_fill()
+
+canvas.exitonclick()
