@@ -7,6 +7,8 @@ tom2 = turtle.Turtle()
 tom2.hideturtle()
 tom3 = turtle.Turtle()
 tom3.hideturtle()
+tom4 = turtle.Turtle()
+tom4.hideturtle()
 
 
 def gotoPos(x, y):
@@ -85,7 +87,7 @@ tom2.showturtle()
 tom2.right(90)
 tom2.shape("circle")
 tom2.shapesize(5, 3.5, 10)
-tom2.fillcolor("white")
+tom2.fillcolor("light gray")
 tom3.showturtle()
 tom3.penup()
 tom3.goto(-110, 30)
@@ -104,8 +106,8 @@ tom.right(30)
 
 tom.forward(140)
 
-gotoPos(-70, 20)
-tom.write("Yezdi", font=("Arial", 20,))
+gotoPos(-60, 20)
+tom.write("Yezdi", font=("Arial", 16,))
 
 gotoPos(-95, 55)
 tom.right(185)
@@ -113,6 +115,42 @@ tom.forward(55)
 tom.right(90)
 tom.forward(10)
 
+# Draw engine
+gotoPos(-70, -30)
+tom.pensize(2)
+tom.setheading(0)
+for _ in range(2):
+    tom.forward(70)
+    tom.right(90)
+    tom.forward(40)
+    tom.right(90)
 
+ypos = -33
+tom.pensize(1)
+for _ in range(8):
+    gotoPos(-75, ypos)
+    tom.forward(80)
+    ypos = ypos - 5
 
+# Draw decorator - side
+gotoPos(12, -30)
+tom.pensize(3)
+tom.forward(78)
+tom.right(120)
+tom.forward(50)
+tom.right(60)
+tom.forward(40)
+tom.right(70)
+tom.forward(45)
+
+tom4.showturtle()
+tom4.penup()
+tom4.goto(-10, -110)
+tom4.color("gray")
+tom4.pendown()
+tom4.setheading(90)
+tom4.shape("circle")
+tom4.shapesize(4,2,1)
+
+tom.hideturtle()
 canvas.exitonclick()
