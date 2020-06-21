@@ -1,7 +1,7 @@
 import turtle
 
-windows = turtle.Screen()
-windows.bgcolor("black")
+window = turtle.Screen()
+window.bgcolor("black")
 
 tom = turtle.Turtle()
 tom.screen.colormode(255)
@@ -35,5 +35,13 @@ for _ in range(6):
 
     tom.left(60)
 
+tom.color("green")
+for _ in range(6):
+    circleSize = 27
+    for _ in range(10):
+        tom.circle(circleSize)
+        circleSize = circleSize + 5
 
-windows.exitonclick()
+    tom.left(60)
+
+window.exitonclick()
