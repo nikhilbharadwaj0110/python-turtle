@@ -2,8 +2,11 @@ import turtle
 
 tom = turtle.Turtle()
 tom.speed(10)
-
+tom.hideturtle()
 canvas = turtle.Screen()
+
+canvas.screensize()
+canvas.setup(width=1.0, height=1.0)
 canvas.bgcolor("dodgerblue")
 
 
@@ -112,7 +115,7 @@ tom.end_fill()
 
 # title
 tom.color("black")
-gotoPos(300, 0)
+gotoPos(-75, 200)
 tom.write("SR-71 BlackBird\n  The spy plane", font=("Arial", 20, "bold"))
 
 
