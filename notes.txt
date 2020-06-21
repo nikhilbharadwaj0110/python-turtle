@@ -1,0 +1,26 @@
+canvas.screensize()
+canvas.setup(width=1.0, height=1.0)
+
+tom.screen.colormode(255)
+
+tom.shape("circle")
+tom.shapesize(5, 4, 1)
+
+canvas.exitonclick()
+canvas = turtle.Screen()
+
+tom.write("SR-71 BlackBird\n  The spy plane", n)
+
+tom.write(str(tom.heading()) + "\n" + str(tom.pos()))
+
+setheading()
+
+
+drawSnowflake(10, 4, 20)
+drawSnowflake(19, 8, 20)
+drawSnowflake(12, 4, 20)
+
+
+
+
+
